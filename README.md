@@ -10,7 +10,7 @@ Run script with following variables
 **"App Name"** = Name of your application in New Relic.
   *note: App names with spaces must be wrapped in quotes*
 
-**AppKeyNumber** = The 42 character Application token for this app
+**AppKeyNumber** = The 42 character Application token for your app
 
 **FolderWithDSYMs** = Path to folder containing dSYM files to be uploaded
 
@@ -19,4 +19,8 @@ Run script with following variables
 A log file is created at `/tmp/upload_dSYM_log.txt`
 
 # Disclaimer
+<<<<<<< HEAD
 This script is offered for use as-is without warranty. You are free to use and modify as needed. It has been created for use with New Relic crash reporting to simplify the dSYM upload process but is not a supported product of New Relic.
+=======
+This scirp is offered for use as-is without warranty. You are free to use and modify as needed. It has been created for use with New Relic crash reporting to simplify the dSYM upload process but is not a supported product of New Relic.
+>>>>>>> a645d95c85d3e962917cad68ee16ead2c15626fd
