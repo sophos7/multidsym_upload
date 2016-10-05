@@ -19,8 +19,4 @@ Run script with following variables
 A log file is created at `/tmp/upload_dSYM_log.txt`
 
 # Disclaimer
-<<<<<<< HEAD
 This script is offered for use as-is without warranty. You are free to use and modify as needed. It has been created for use with New Relic crash reporting to simplify the dSYM upload process but is not a supported product of New Relic.
-=======
-This scirp is offered for use as-is without warranty. You are free to use and modify as needed. It has been created for use with New Relic crash reporting to simplify the dSYM upload process but is not a supported product of New Relic.
->>>>>>> a645d95c85d3e962917cad68ee16ead2c15626fd
