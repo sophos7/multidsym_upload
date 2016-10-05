@@ -38,6 +38,11 @@ function logFile(){
 	echo "\$ $@" >> ${LOGFILE}; "$@" ;
 }
 
+### Validate these values a bit
+if [[ ${APPNAME} == "" || ${APPKEY} == "" || ${#APPKEY} < 42 || ${DSYM} == "" ]]; then
+	invalidEntry
+fi
+
 ### Open log file with date and time
 date > ${LOGFILE}
 
