@@ -7,12 +7,12 @@ It can be tedious to [manually upload](https://docs.newrelic.com/docs/mobile-mon
 Run script with following variable
 `./multidsym_upload.sh "App Name" AppKeyNumber FolderWithDSYMs`
 
-"App Name" = Name of your application in New Relic.
+**"App Name"** = Name of your application in New Relic.
   *note: App names with spaces must be wrapped in quotes*
 
-AppKeyNumber = The 42 character Application token for this app
+**AppKeyNumber** = The 42 character Application token for this app
 
-FolderWithDSYMs = Path to folder containing dSYM files to be uploaded
+**FolderWithDSYMs** = Path to folder containing dSYM files to be uploaded
 
 # Troubleshooting
 
