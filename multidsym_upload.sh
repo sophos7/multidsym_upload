@@ -39,7 +39,7 @@ function logFile(){
 }
 
 ### Validate these values a bit
-if [[ ${APPNAME} == "" || ${APPKEY} == "" || ${#APPKEY} < 42 || ${DSYM} == "" ]]; then
+if [[ ${APPNAME} == "" || ${APPKEY} == "" || ${#APPKEY} < 42 || ${DSYMDIR} == "" ]]; then
 	invalidEntry
 fi
 
