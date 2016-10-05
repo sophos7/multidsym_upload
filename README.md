@@ -10,7 +10,7 @@ Run script with following variable
 **"App Name"** = Name of your application in New Relic.
   *note: App names with spaces must be wrapped in quotes*
 
-**AppKeyNumber** = The 42 character Application token for this app
+**AppKeyNumber** = The 42 character Application token for your app
 
 **FolderWithDSYMs** = Path to folder containing dSYM files to be uploaded
 
