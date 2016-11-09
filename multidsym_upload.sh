@@ -52,7 +52,7 @@ find ${DSYMDIR} -type d -name '*.dSYM' -print0 | while IFS= read -r -d '' DSYM; 
 	BUILDID=`xcrun dwarfdump --uuid "${DSYM}" | tr '[:upper:]' '[:lower:]' | tr -d '-'| awk '{print $2}' | xargs | sed 's/ /,/g'`
 	logBuildId
 	logFile ${ZIP} /tmp/${BUILDID:0:32}.zip "${DSYM}"
-	logFile curl -F dsym=@"/tmp/${BUILDID}.zip" -F buildId="${BUILDID}" -F appName="${APPNAME}" -H "X-APP-LICENSE-KEY: ${APPKEY}" ${URL}
+	logFile curl -F dsym=@"/tmp/${BUILDID:0:32}.zip" -F buildId="${BUILDID}" -F appName="${APPNAME}" -H "X-APP-LICENSE-KEY: ${APPKEY}" ${URL}
 	logFile rm /tmp/${BUILDID:0:32}.zip
 done
 
