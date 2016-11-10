@@ -10,7 +10,7 @@ Run the script with the following arguments
 **"App Name"** = Name of your application in New Relic.
   *note: App names with spaces must be wrapped in quotes*
 
-**AppKeyNumber** = The 42 character Application token for your app
+**AppKeyNumber** = The 42 character [Application token](https://docs.newrelic.com/docs/mobile-monitoring/new-relic-mobile/maintenance/viewing-your-application-token) for your app
 
 **FolderWithDSYMs** = Path to folder containing dSYM files to be uploaded
 
