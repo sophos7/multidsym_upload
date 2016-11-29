@@ -47,7 +47,7 @@ fi
 date > ${LOGFILE}
 
 ### Loop through given directory to process each dSYM
-find ${DSYMDIR} -type d -name '*.dSYM' -print0 | while IFS= read -r -d '' DSYM; do
+find "${DSYMDIR}" -type d -name '*.dSYM' -print0 | while IFS= read -r -d '' DSYM; do
 	logFile echo "File to process" ${DSYM}
 	BUILDID=`xcrun dwarfdump --uuid "${DSYM}" | tr '[:upper:]' '[:lower:]' | tr -d '-'| awk '{print $2}' | xargs | sed 's/ /,/g'`
 	logBuildId
